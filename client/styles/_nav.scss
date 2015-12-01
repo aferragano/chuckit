@@ -1,0 +1,38 @@
+.nav {
+	height: 3em;
+	background-color:$blue2; 
+	color: $orange2;
+	font-family: $font1;
+
+	a, a:visited {
+		vertical-align: middle;
+		margin-left: .5em;
+		color: $orange2;
+		text-decoration: none;
+		font-size: 1.5em; 
+	}
+	a:hover{
+		color: $orange1;
+	}
+
+	.search{
+		font-size: 1.2em; 
+		border:none;
+		vertical-align: middle;
+		margin-left: 5em;
+		width: 10em;
+	}
+	.btn-search{
+		height: 2.3em;
+		border: 2px solid $orange2;
+		background-color: $blue2;
+		color: $orange2;
+		font-family: $font1;
+	}
+	#nav-search-submit-text{
+		background-image: url("/images/search.png");
+		height: 3em;
+		width: 5em;
+	}
+
+}

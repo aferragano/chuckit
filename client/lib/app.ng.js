@@ -1,0 +1,1 @@
+angular.module('chuckit',['angular-meteor', 'ui.router']);
