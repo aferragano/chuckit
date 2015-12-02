@@ -1,10 +1,28 @@
-
 <div class="banner">
-
-	<h1 class="banner-text">find the perfect <br>gift </h1>
+	<h1 class="banner-text">Find the perfect <br>gift! </h1>
 </div>
 
-<li ng-repeat="product in products">
+<div class="sale">
+	<h2>On Sale</h2>
+	<div class="gallery"> 
+		<li ng-repeat="product in products">
+			<div class="product-sale-card"> 
+				<h3>{{ product.name }} </h3>
+				<p class="brand" >by {{ product.brand }} </p>
+				<img src="{{product.imageUrl}} ">
+				<p class="sale-tag" > {{product.productTags[0]}} </p>
+				<p class="sale-price" >now {{ product.price }} </p>
 
-	{{ product.name }}
-</li>
+			</div>
+		</li>
+	</div>
+</div>
+
+<div class="all-products">
+	<h2>All Products <input> </h2>
+	<li ng-repeat="product in products">
+		<p> {{ product.description }}</p>
+		{{ product.imageUrl }}
+		{{ product.name }}
+	</li>
+</div>

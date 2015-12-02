@@ -3,15 +3,34 @@
 	height:20em;
 	color: $orange2;
 	background-image: url("http://trudog.com/home/wp-content/uploads/2015/02/disappointed-dog-with-toy.jpg");
+	//background-repeat: no-repeat;
+	background-color: white;
 	background-position: 50% 62%; 
 	.banner-text{
+		font-family: $font1;
 		background-color: $orange2;
-		color: $blue2;
+		color: $blue22;
 		text-align: center;
 		margin: 1.5em;
-		padding: .2em;
-		@include span-columns(4);
+		padding: 1.5em;
+		height: 7.2em ;
+		width:7.5em ;
 		@include shift(1);
-		border-radius:5px;
+		border-radius:10em;
+		/* Safari */
+		-webkit-transform: rotate(-18deg);
+
+		/* Firefox */
+		-moz-transform: rotate(-18deg);
+
+		/* IE */
+		-ms-transform: rotate(-18deg);
+
+		/* Opera */
+		-o-transform: rotate(-18deg);
+
+		/* Internet Explorer */
+		filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+
 	}
 }
