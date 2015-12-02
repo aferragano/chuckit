@@ -6,7 +6,7 @@ Meteor.startup(function() {
 				'productTags': [ "dog toy", "ball" ],
 				'name': 'Chuckit2! Indoor Ball',
 				'brand': 'Petmate',
-				'price': '4.99',
+				'price': '4.9',
 				'sale': "true",
 				'imageUrl': "http://ecx.images-amazon.com/images/I/51lXNf7piFL.jpg",			
 				'stock': '20',

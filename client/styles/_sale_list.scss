@@ -25,8 +25,21 @@
 			color:white;
 			bottom:0px;
 			margin:0;
-			float:bottom;
 
+		}
+		.add-to-cart {
+			display:block;
+			font-size: 1em;
+			font-family: $font2;
+			background-color: $blue3;
+			width:100%;
+			color:white;
+			bottom:0px;
+			margin:0;
+			border: none;
+		}
+		.add-to-cart:hover{
+			color:red;
 		}
 		.product-sale-card {
 			vertical-align:text-top;
@@ -58,8 +71,8 @@
 			.sale-tag {
 				margin:0;
 				width:100%;
-
 			}
+
 
 			img{
 				width: 150px;
