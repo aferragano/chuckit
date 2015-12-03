@@ -22,10 +22,16 @@
 </div>
 
 <div class="all-products">
-	<h2>All Products <input> </h2>
-	<li ng-repeat="product in products">
-		<p> {{ product.description }}</p>
-		{{ product.imageUrl }}
-		{{ product.name }}
+	<h2>All Products <input ng-model="searchText"> </h2>
+	<li ng-repeat="product in products | filter:searchText ">
+		<div class="product-sale-card"  > 
+				<h3>{{ product.name }} </h3>
+				<p class="brand" >by {{ product.brand }} </p>
+				<img src="{{product.imageUrl}} ">
+				<p class="sale-tag" > {{product.productTags[0]}} </p>
+				<p class="sale-price" >now {{ product.price | currency }} </p>
+				<button class="add-to-cart" >add to cart</button>
+
+			</div>
 	</li>
 </div>
