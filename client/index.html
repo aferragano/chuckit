@@ -2,6 +2,7 @@
 
 	<link href='https://fonts.googleapis.com/css?family=Paytone+One' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Signika:300,400' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
 <base href="/">
 
 </head>
@@ -11,13 +12,57 @@
 <div ng-app="chuckit" ng-strict-di="">
 	<div class="nav">
 		<a href="/products">Chuckit</a>
-		<input class="search">
+		<input class="search" ng-model="searchText">
 		<input type="submit" class="btn-search" value="find it">
 	</div>
 
 	<div ui-view>
 	</div>
 
+</div>
+
+<div class="footer">
+	<div class="left-foot" >
+		<h3>shopping</h3>
+		<ul>
+			<li><a href=""> dog balls </a></li>
+			<li><a href="">ball launchers </a></li>
+			<li><a href="">dog treats </a></li>
+			<li><a href="">dog leashes </a></li>
+			<li><a href="">dog collars </a></li>
+		</ul>
+	</div>
+	<div class="mid-foot" >
+		<h3>my account</h3>
+		<ul>
+			<li><a href="">my account </a></li>
+			<li><a href="">order status </a></li>
+			<li><a href="">quick reorder </a></li>
+			<li><a href="">my cart </a></li>
+			<li><a href="">wish list </a></li>
+		</ul>
+		<h3>email sign up</h3>
+		<input>
+
+	</div>
+	<div class="right-foot" >
+		<h3>careers</h3>
+		<ul>
+			<li><a href="">join the team </a></li>
+			<li><a href="">learn about careers</a></li>
+		</ul>
+		<h3>customer service</h3>
+		<ul>
+			<li><a href="">current offer details </a></li>
+			<li><a href="">shipping and delivery </a></li>
+			<li><a href="">easy returns </a></li>
+			<li><a href="">contact us </a></li>
+			<li><a href="">help </a></li>
+		</ul>
+	</div>
+
+	<p>this is just a mock up website to practice meteor, angular, bourbon and neat</p>
+	<p>Thanks for having a look. All code is open source and found at <a href="">github</a></p>
 </div>
 
 </body>
