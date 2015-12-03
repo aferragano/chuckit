@@ -1,2 +1,30 @@
 
+<div>
+
+<div class="left-section">
+	{{product.name}}
+	<p ng-repeat="productTags in product.productTags">{{ productTags }} </p>
+	{{product.description}}	
+</div>
+<div class="middle-section">
+	<div class="thumbs"><p ng-repeat="images in product.images"><img src="{{ images.full}}"> </p></div>
+	<div class="full-image"><img src="{{ product.images[0].full}}"> </div>
+	
+
+</div>
+
+
+<div class="right-section">
+	all the magic
+
+</div>
+
+
+<div class="reviews">
+lovely reviews
+
+</div>
+</div>
+
+
 {{product.name}}

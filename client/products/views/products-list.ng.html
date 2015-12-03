@@ -10,7 +10,7 @@
 			<div class="product-sale-card" ng-show="product.sale" > 
 				<h3>{{ product.name }} </h3>
 				<p class="brand" >by {{ product.brand }} </p>
-				<img src="{{product.imageUrl}} ">
+				<img src="{{product.images[0].full}} ">
 				<p class="sale-tag" > {{product.productTags[0]}} </p>
 				<p class="sale-price" >now {{ product.price | currency }} </p>
 				<button class="add-to-cart" >add to cart</button>
@@ -29,7 +29,7 @@
 				<a href="/products/{{product._id}} ">
 				<h3>{{ product.name }} </h3>
 				<p class="brand" >by {{ product.brand }} </p>
-				<img src="{{product.imageUrl}} ">
+				<img src="{{product.images[0].full}} ">
 				<p class="sale-tag" > {{product.productTags[0]}} </p>
 				<p class="sale-price" >{{ product.price | currency }} </p>
 				<button class="add-to-cart" >add to cart</button>

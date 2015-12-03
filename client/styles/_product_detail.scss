@@ -1,0 +1,25 @@
+.left-section{
+	@include span-columns(3 of 12);
+}
+.middle-section{
+	@include span-columns(5 of 12);
+	.thumbs{ 
+	display: inline-block;
+		img{
+			width: 60px;
+		}
+	}
+	.full-image{
+		display: inline-block;
+		
+		img {
+			width: 300px;
+		}
+	}
+}
+.right-section{
+	@include span-columns(3 of 12);
+}
+.reviews{
+	@include span-columns(12 of 12);
+}
