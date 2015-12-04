@@ -2,9 +2,9 @@
 <div>
 
 <div class="left-section">
-	{{product.name}}
-	<p ng-repeat="productTags in product.productTags">{{ productTags }} </p>
-	{{product.description}}	
+	<h1 class="product-name">{{product.name}}</h1>
+	<p class="product-tag" ng-repeat="productTags in product.productTags">{{ productTags }} </p>
+	<p class="description">{{product.description}}	</p> 
 </div>
 <div class="middle-section">
 	<div class="thumbs"><p ng-repeat="images in product.images"><img src="{{ images.full}}"> </p></div>
@@ -15,7 +15,14 @@
 
 
 <div class="right-section">
-	all the magic
+	
+	<p class="price">price: <span class="price-value">{{ product.price | currency}}</span> </p>
+	<p class="quantity"> Qty<input></p>  
+	<button class="btn add-to-cart">add to cart</button>
+
+	<button class="btn add-to-wishlist">add to wishlist</button>
+
+
 
 </div>
 
@@ -23,8 +30,7 @@
 <div class="reviews">
 lovely reviews
 
+
 </div>
 </div>
 
-
-{{product.name}}

@@ -1,12 +1,39 @@
 .left-section{
-	@include span-columns(3 of 12);
+	@include span-columns(4 of 12);
+	margin-left: 10px;
+	.product-name{ 
+		font-family: $font1;
+		color: $orange1;
+	}
+	.product-tag{
+		font-size: .7em;
+		margin-right:.5em;
+		font-family: $font3;
+		color: $blue22;
+		display: inline-block;
+	}
+	.description{
+		font-size: 1em;
+		font-family: $font3;
+		color: $blue1;
+		line-height:1.5em;
+	}
 }
 .middle-section{
-	@include span-columns(5 of 12);
+	@include span-columns(4 of 12);
 	.thumbs{ 
-	display: inline-block;
+		p{
+			display: inline-block;
+			vertical-align: middle;
+		}
+		display: inline-block;
 		img{
-			width: 60px;
+			width: 40px;
+			opacity: .6;
+			margin-right: 20px;
+		}
+		img:hover{
+			opacity: .9;
 		}
 	}
 	.full-image{
@@ -18,7 +45,50 @@
 	}
 }
 .right-section{
+	margin-top:1em;
+	height:15em;
+	border: 1px solid $orange1; 
 	@include span-columns(3 of 12);
+	button{
+		border:none;
+		background-color: $blue22;
+		color:white;
+		font-family: $font3;
+		font-size: 1em;
+		padding:5px;
+
+	}
+	.btn, add-to-cart {
+		display:block;
+		text-align: center;
+		margin: 1em auto 0 auto;
+	}
+	.add-to-wishlist{
+		background-color: $orange1;
+	}
+	.quantity {
+		color: $orange1;
+		font-family: $font3;
+		margin: 1em auto 0 auto;
+		text-algin:center;
+		margin-left:4.5em;
+		input{
+			font-size: 2em;
+			width: 1.5em;
+			margin-left:.5em;
+			vertical-align:text-top;
+		}
+	}
+	.price {
+		margin-left:3em;
+		font-family: $font3;
+		color: $orange1;
+		.price-value{
+			font-size: 2em;
+			vertical-align:text-top;
+			color: $blue22;
+		}
+	}
 }
 .reviews{
 	@include span-columns(12 of 12);
