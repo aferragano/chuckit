@@ -1,6 +1,3 @@
-
-<div>
-
 <div class="left-section">
 	<h1 class="product-name">{{product.name}}</h1>
 	<p class="product-tag" ng-repeat="productTags in product.productTags">{{ productTags }} </p>
@@ -25,12 +22,28 @@
 
 
 </div>
-
-
 <div class="reviews">
-lovely reviews
-
-
+	<h2>Reviews</h2>
+	<div ng-repeat="review in product.reviews" class="review-card">
+		<h3 class="review-title">{{ review.title}}</h3>
+		<p class="review-user-name">by {{review.userName}}</p>
+		<p class="review-date"> {{ review.date}}</p>
+		<div class="star" ng-repeat="stars in review">  </div>
+		{{ review.stars}}
+		<hr>
+		<div class="star" ng-repeat="stars in review">{{review.stars}}  </div>
+		{{ review.stars}}poo
+		<hr>
+		<div class="star" ng-repeat="stars">  </div>
+		{{ review.stars }} of 5
+		<p class="review-content">{{ review.content}}</p>
+		<p class="recommended"> reccommended: {{ review.reccomend}}</p>
+		<div>
+			{{ review.helpful}}
+			<button> helpful</button>
+			<button> not</button>
+		</div>
+	</div>
 </div>
-</div>
+
 

@@ -10,13 +10,18 @@
 <body>
 
 <div ng-app="chuckit" ng-strict-di="">
-	<div class="nav">
-		<a href="/products">Chuckit</a>
-		<input class="search" ng-model="searchText">
-		<input type="submit" class="btn-search" value="find it">
-	</div>
+	<div class="nav" >
+	<a href="/products">Chuckit</a>
+	<input class="search" ng-model="searchText">
+	<input type="submit" class="btn-search" value="find it">
 
-	<div ui-view>
+	<div >
+		<button class="btn login">login</button>
+		<button class="btn cart">cart</button>
+	</div>
+</div>
+
+	<div ui-view autoscroll="true" >
 	</div>
 
 </div>
@@ -25,7 +30,7 @@
 	<div class="left-foot" >
 		<h3>shopping</h3>
 		<ul>
-			<li><a href=""> dog balls </a></li>
+			<li><a href="">dog balls </a></li>
 			<li><a href="">ball launchers </a></li>
 			<li><a href="">dog treats </a></li>
 			<li><a href="">dog leashes </a></li>

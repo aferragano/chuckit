@@ -92,4 +92,59 @@
 }
 .reviews{
 	@include span-columns(12 of 12);
+
+	.review-card {
+		@include span-columns(3);
+		margin: 10px;
+	}
+	h2{
+		margin-left:3em;
+		color: $orange2;
+		font-family: $font1;
+		letter-spacing: 1.3px;
+		text-decoration: underline;
+	}
+
+	.review-title{
+		color: $blue2;
+		font-family: $font3;
+		font-size: 2em;
+		text-align:center;
+		margin-bottom: 0;
+	}
+	p{
+		display:inline-block;
+	}
+	.review-date{
+		display:block;
+		font-family: $font3;
+		font-size: .6em;
+		text-align: right;
+	}
+	
+	.review-user-name{
+		margin-top: 0;
+		display: block;
+		text-align: right;
+		font-family: $font3;
+		font-size: .9em;
+		color: $orange2;
+
+	}
+	.review-content{
+		display: block;
+	}
+	.review-content{
+		padding: 5px;
+		font-family: $font3;
+	}
+	.star{
+		background-color: $blue1 ;
+		height:1em;
+		width:1em;
+		display: inline-block;
+		margin:3px;
+	}
+
+
 }
