@@ -20,14 +20,14 @@
 			<option value="1"> 1 </option>
 			<option value="2"> 2 </option>
 			<option value="3"> 3 </option>
+			<option value="4"> 4 </option>
+			<option value="5"> 5 </option>
 		</select></p>  
-	<button class="btn add-to-cart">add to cart</button>
-	<input type="submit" value="add to the cart">
+	
+	<input class="btn add-to-cart" type="submit" value="add to cart">
 	</form>
 
 	<button class="btn add-to-wishlist">add to wishlist</button>
-
-
 
 </div>
 <div class="reviews">
@@ -36,33 +36,31 @@
 		<h3 class="review-title">{{ review.title}}</h3>
 		<p class="review-user-name">by {{review.userName}}</p>
 		<p class="review-date"> {{ review.date}}</p>
-		<div class="star" ng-repeat="stars in review">  </div>
-		{{ review.stars}}
-		<hr>
-		<div class="star" ng-repeat="stars in review">{{review.stars}}  </div>
-		{{ review.stars}}poo
-		<hr>
-		{{ review.stars }} of 5
+		<div class="star" > {{ review.stars }} of 5 </div>
+		<p ng-show="review.reccomend.no-show " class="recommended"> product recommended</p>
 		<p class="review-content">{{ review.content}}</p>
-		<p class="recommended"> reccommended: {{ review.reccomend}}</p>
+		
 		<div>
-			{{ review.helpful}}
-			<button> helpful</button>
-			<button> not</button>
+			<button> {{ review.helpfull}}  helpfull</button>
+			<button> {{ review.nothelpfull}} not</button>
+
 		</div>
 	</div>
-	<h3>add review</h3>
-	<form name="reviewForm" novalidate>
-		<select  required>
-			<option value="1"> 1 star</option>
-			<option value="2"> 2 star</option>
-			<option value="3"> 3 star</option>
-		</select>
-		<textarea name="content"  required> </textarea>
-		<input name="userName"  type="email" required>
-		<div >reviewForm is {{ reviewForm.$valid }}</div>
-		<input type="submit" value="submit">
-	</form>
+	<div class="create-review"> 
+		<h3>add review</h3>
+		<form name="reviewForm" novalidate>
+			<select class="select-stars" required>
+				<option value="1"> 1 star</option>
+				<option value="2"> 2 star</option>
+				<option value="3"> 3 star</option>
+				<option value="4"> 4 star</option>
+				<option value="5"> 5 star</option>
+			</select>
+			<textarea name="content" class="content-area" placeholder="what did you like or dislike?" required> </textarea>
+			<input class="input-name" name="userName" placeholder="email@mail.com"  type="email" required>
+			<input type="submit" value="submit">
+		</form>
+	</div>
 </div>
 
 
