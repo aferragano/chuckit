@@ -1,1 +1,1 @@
-angular.module('chuckit',['angular-meteor', 'ui.router']);
+angular.module('chuckit',['angular-meteor', 'ui.router', 'accounts.ui']);
