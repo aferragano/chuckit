@@ -7,7 +7,18 @@
 	background-color: white;
 	background-position: 50% 62%; 
 	margin-bottom: .5em;
+	@include media($mobile){
+		background-position: 60% 60%; 
+	}
 	.banner-text{
+		@include media($mobile) {
+			font-size: 1.2em;
+			margin: .6em;
+			padding: 1em;
+			height: 7em ;
+			width:7em ;
+			
+		}
 		font-family: $font1;
 		background-color: $orange2;
 		color: $blue22;

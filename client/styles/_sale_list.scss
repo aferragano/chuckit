@@ -52,13 +52,22 @@
 		margin-top:.5em;
 		margin-bottom:0;
 	}
-	.gallery {
+	.sale-gallery {
 		@include span-columns(12);
 		height: auto;
+		
+
+	}
+	.gallery{
+		white-space:nowrap;
+		white-space:nowrap;
+		overflow-y: scroll;
 	}
 	li {
 		list-style-type: none;
 		display: inline-block;
+		white-space:nowrap;
+
 
 		.sale-price{
 			display: block;
@@ -87,8 +96,4 @@
 		
 
 	}
-}
-
-.all-products{
-	
 }

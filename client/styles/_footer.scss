@@ -2,6 +2,8 @@
 
 	background-color: $blue22;
 	@include span-columns(12);
+
+
 	h3	{
 		width: 10em;
 		color:$orange2;
@@ -52,4 +54,15 @@
 		color: white;
 		font-family: $font3;
 	}
+
+	.left-foot, .mid-foot, .right-foot, p{
+		@include media($mobile){
+			@include span-columns(4 of 4);
+			@include shift(0);
+			text-align:right;
+			padding-left: 10px;
+			padding-right: 80px;
+		}
+	}
+		
 }

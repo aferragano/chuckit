@@ -4,20 +4,22 @@
 
 <div class="sale">
 	<h2>On Sale</h2>
-	<div class="gallery"> 
-		<li ng-repeat="product in products">
-			<a href="/products/{{product._id}} ">
-			<div class="product-sale-card" ng-show="product.sale" > 
-				<h3>{{ product.name }} </h3>
-				<p class="brand" >by {{ product.brand }} </p>
-				<img src="{{product.images[0].full}} ">
-				<p class="sale-tag" > {{product.productTags[0]}} </p>
-				<p class="sale-price" >now {{ product.price | currency }} </p>
-				<button class="add-to-cart" >add to cart</button>
+	<div class="sale-gallery"> 
+		<div class="gallery">
+			<li ng-repeat="product in products">
+				<a href="/products/{{product._id}} ">
+				<div class="product-sale-card" ng-show="product.sale" > 
+					<h3>{{ product.name }} </h3>
+					<p class="brand" >by {{ product.brand }} </p>
+					<img src="{{product.images[0].full}} ">
+					<p class="sale-tag" > {{product.productTags[0]}} </p>
+					<p class="sale-price" >now {{ product.price | currency }} </p>
+					<button class="add-to-cart" >add to cart</button>
 
-			</div>
-			</a>
-		</li>
+				</div>
+				</a>
+			</li>
+		</div>
 	</div>
 </div>
 
