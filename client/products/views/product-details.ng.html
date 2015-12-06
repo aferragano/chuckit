@@ -12,10 +12,18 @@
 
 
 <div class="right-section">
-	
 	<p class="price">price: <span class="price-value">{{ product.price | currency}}</span> </p>
-	<p class="quantity"> Qty<input></p>  
+
+	<form name="addToCartForm" ng-controller="CartController as cartsCtrl" ng-submit="addCart(product)">
+	<p class="quantity"> Qty
+	<select name="quantity" required>
+			<option value="1"> 1 </option>
+			<option value="2"> 2 </option>
+			<option value="3"> 3 </option>
+		</select></p>  
 	<button class="btn add-to-cart">add to cart</button>
+	<input type="submit" value="add to the cart">
+	</form>
 
 	<button class="btn add-to-wishlist">add to wishlist</button>
 
@@ -34,7 +42,6 @@
 		<div class="star" ng-repeat="stars in review">{{review.stars}}  </div>
 		{{ review.stars}}poo
 		<hr>
-		<div class="star" ng-repeat="stars">  </div>
 		{{ review.stars }} of 5
 		<p class="review-content">{{ review.content}}</p>
 		<p class="recommended"> reccommended: {{ review.reccomend}}</p>
@@ -44,6 +51,18 @@
 			<button> not</button>
 		</div>
 	</div>
+	<h3>add review</h3>
+	<form name="reviewForm" novalidate>
+		<select  required>
+			<option value="1"> 1 star</option>
+			<option value="2"> 2 star</option>
+			<option value="3"> 3 star</option>
+		</select>
+		<textarea name="content"  required> </textarea>
+		<input name="userName"  type="email" required>
+		<div >reviewForm is {{ reviewForm.$valid }}</div>
+		<input type="submit" value="submit">
+	</form>
 </div>
 
 

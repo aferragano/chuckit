@@ -23,3 +23,10 @@ light
 https://www.google.com/fonts/specimen/Signika
 use link href='https://fonts.googleapis.com/css?family=Signika:300,400' rel='stylesheet' type='text/css'
 font-family: 'Signika', sans-serif;
+
+user auth
+meteor remove insecure
+
+meteor add accounts-password 
+-powerful package for all the user operations you can think of: Login, signup, change password, password recovery, email confirmation and more.
+ meteor add dotansimha:accounts-ui-angular
