@@ -66,18 +66,13 @@
 
 			}
 		}
-		
 		padding: 20px;
 		.product-sale-card{
-
 		}
 		li{
-			width:100%;
-			
+			width:100%;	
 		}
-
 	}
-
 	.product-sale-card{
 		@include media($mobile){
 			@include span-columns(4 of 4);
@@ -85,6 +80,4 @@
 
 		}
 	}
-
-
 }

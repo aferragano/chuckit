@@ -16,11 +16,11 @@ $font1: 'Paytone One', sans-serif;
 $font2: 'Signika', sans-serif;
 $font3:  'Josefin Sans', sans-serif;
 
-input{
+input, textarea{
 	border: 1px solid $orange2;
 	outline: none;
 }
-input:focus{
+input:focus, textarea:focus{
 	box-shadow: 0 0 2px $orange2;
 	border: 1px solid $orange2;
 }
