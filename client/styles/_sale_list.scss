@@ -8,7 +8,7 @@
 	display: inline-block;
 	font-family: $font1;
 	color: $blue3;
-	height: 17em;
+	height: 18.2em;
 	width: 12em;
 	margin:1em;
 	background-color:white;
@@ -19,7 +19,10 @@
 		color: $blue1;
 		margin-top:0;
 		margin-bottom: 0;
-		line-height: 1.1em;
+		word-wrap: break-word;
+		white-space: normal;
+		line-height: 1em;
+		height:2em;
 	}
 	.brand {
 		font-size: .7em;
