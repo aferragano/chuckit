@@ -1,4 +1,13 @@
 .nav {
+	@include media($mobile) {
+		height: 10em;
+		.title{
+			display:block;
+			text-align:center;
+			font-size: 2.4em;
+		}
+		
+	}
 	height: 3em;
 	background-color:$blue22; 
 	color: $orange2;
@@ -22,6 +31,11 @@
 		margin-left: 5em;
 		width: 10em;
 		outline:none;
+		@include media($mobile) {
+			margin-bottom: 5px;
+			@include span-columns(2);
+			@include shift(1);
+		}
 	}
 	.btn-search{
 		height: 2.3em;
@@ -29,12 +43,24 @@
 		background-color: $blue2;
 		color: $orange2;
 		font-family: $font1;
+
 	}
 	#nav-search-submit-text{
 		background-image: url("/images/search.png");
 		height: 3em;
 		width: 5em;
 	}
+	.cart{
+		width:4em;
+		font-size: 1em;
+		@include media($mobile) {
+			margin-bottom: 5px;
+			@include span-columns(2);
+			@include shift(1);
+			margin-top:10px;
+		}
+	}
+
 
 }
 .user-nav{

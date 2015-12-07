@@ -1,5 +1,9 @@
 .left-section{
 	@include span-columns(4 of 12);
+	@include media($tablet){
+		@include span-columns(4 of 8);
+
+	}
 	margin-left: 10px;
 	.product-name{ 
 		font-family: $font1;
@@ -21,6 +25,9 @@
 }
 .middle-section{
 	@include span-columns(4 of 12);
+	@include media($tablet){
+		@include span-columns(4 of 8);
+	}
 	.thumbs{ 
 		p{
 			display: inline-block;
@@ -62,7 +69,6 @@
 		display:block;
 		text-align: center;
 		margin: 1em auto 0 auto;
-
 		background-color: $blue2;
 		color:white;
 		border:none;
@@ -101,8 +107,18 @@
 	@include span-columns(12 of 12);
 
 	.review-card {
-		@include span-columns(4);
 		margin: 10px;
+		@include span-columns(4);
+		@include media($mobile){
+			@include span-columns(4 or 4);
+			margin:0;
+		}
+		@include media($tablet){
+			@include span-columns(8 of 8);
+			@include shift(0);
+			margin:0;
+		}
+		
 	}
 	h2{
 		margin-left:3em;
@@ -143,6 +159,7 @@
 		display: block;
 	}
 	.review-content{
+		outline:none;
 		margin: .2em 0 .2em 0;
 		padding: 3px;
 		height: 8em;
@@ -150,6 +167,9 @@
 		background-color: $blue22;
 		color:white;
 		font-family: $font3;
+	}
+	.review-content:focus{
+		outline:none;
 	}
 	.star{
 		font-size:1em;
@@ -186,5 +206,45 @@
 		display:block;
 		clear:both;
 		height:2em;
+	}
+}
+.left-section, .middle-section, .right-section, .reviews, .create-review{
+	@include media($mobile){
+		@include span-columns(4 of 4);
+		padding: 3px;
+		margin:0;
+	}
+}
+.middle-section, .right-section{
+	@include media($tablet){
+		@include span-columns(4 of 8);
+		padding: 3px;
+		margin:0;
+	}
+	@include media($mobile){
+		@include span-columns(4 of 4);
+		padding: 3px;
+		margin:0;
+	}
+}
+.create-review{
+	@include media($mobile){
+		textarea{
+			width:400px;
+		}
+		.content-area {
+			@include span-columns(4 of 4);
+
+		}
+	}
+	@include media($tablet){
+		textarea, .content-area{
+			@include span-columns(8 of 8);
+			clear:both;
+		}
+		.create-review {
+			@include span-columns(8 of 8);
+			
+		}
 	}
 }
